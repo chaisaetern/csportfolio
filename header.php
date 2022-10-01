@@ -17,6 +17,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
+	<!-- Custom Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Quicksand&family=Righteous&family=Rubik+Dirt&display=swap" rel="stylesheet">
+	
+	<script src="https://kit.fontawesome.com/8ea15955cd.js" crossorigin="anonymous"></script>
+
 	<?php wp_head(); ?>
 </head>
 

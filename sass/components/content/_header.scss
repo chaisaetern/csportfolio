@@ -1,0 +1,42 @@
+/*
+*   Header Styling
+*
+*   !! sass --watch ./sass/style.scss:./style.css
+* 
+*   !! ~ Keep things organized, please.
+*   !! ~ Call from variables/mixins
+*
+*/
+
+
+.site-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100% !important;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: #0b0120;
+    // border-bottom: 2px solid #050707;
+    z-index: 99999;
+
+    .site-branding {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .custom-logo {
+            width: 5rem;
+        }
+    }
+
+}
+
+
+
+// Hides WP Dashboard header
+// #wpadminbar {
+//     display: none !important;
+// }

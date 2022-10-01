@@ -1,0 +1,62 @@
+/*
+*   Landing Page Styling
+*
+*   !! sass --watch ./sass/style.scss:./style.css
+* 
+*   !! ~ Keep things organized, please.
+*   !! ~ Call from variables/mixins
+* 
+*   !! ~ FONTS
+~   Header font:
+*       - font-family: 'Kaushan Script', cursive;
+*       - font-family: 'Rubik Dirt', cursive;
+*       - font-family: 'Righteous', cursive;
+~   Paragraph font:
+*       - font-family: 'Quicksand', sans-serif;
+*
+*/
+
+
+.landing-page {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    // color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #050707;
+
+    .pallet-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        // height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        & > div {
+            width: 2rem;
+            height: 4rem;
+            &:nth-child(1) {
+                background: #00ff00;
+            }
+            &:nth-child(2) {
+                background: #050707;
+            }
+            &:nth-child(3) {
+                background: #272727;
+            }
+            &:nth-child(4) {
+                background: #fefefe;
+            }
+        }
+    }
+
+
+
+}

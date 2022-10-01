@@ -1,17 +1,29 @@
-$color__background-body: #fff;
+/*
+*   Colors
+*
+*   ~ Charcoal - #242F36
+*   ~ Neon - #3CBDA9
+*   ~ White - #FFFFFF
+*   
+*
+*/
+
+
+// $color__background-body: #2E6F71;
+$color__background-body: #242F36;
 $color__background-screen: #f1f1f1;
 $color__background-hr: #ccc;
-$color__background-button: #e6e6e6;
+$color__background-button: #fff;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 
-$color__text-screen: #21759b;
+$color__text-screen: #3CBDA9;
 $color__text-input: #666;
-$color__text-input-focus: #111;
+$color__text-input-focus: #fff;
 $color__link: #4169e1; //royalblue
-$color__link-visited: #800080; //purple
-$color__link-hover: #191970; //midnightblue
-$color__text-main: #404040;
+$color__link-visited: #fff; //purple
+$color__link-hover: #3CBDA9; //midnightblue
+$color__text-main: #3CBDA9;
 
 $color__border-button: #ccc #ccc #bbb;
 $color__border-button-hover: #ccc #bbb #aaa;
