@@ -1,0 +1,62 @@
+/*
+*   Pagination Styling
+*
+*   !! sass --watch ./sass/style.scss:./style.css
+* 
+*   !! ~ Keep things organized, please.
+*   !! ~ Call from variables/mixins
+* 
+*   !! ~ FONTS
+~   Header font:
+*       - font-family: 'Kaushan Script', cursive;
+*       - font-family: 'Rubik Dirt', cursive;
+*       - font-family: 'Righteous', cursive;
+~   Paragraph font:
+*       - font-family: 'Quicksand', sans-serif;
+*
+*/
+
+#pagination {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    list-style: none;
+    z-index: 99;
+  
+    & > li {
+        position: relative;
+        margin: 20px 0;
+        background: #fff;
+        border-radius: 100%;
+        width: 8px;
+        height: 8px;
+        transition: all .2s ease;
+  
+        &:hover {
+            transform: scale(1.5);
+        }
+        
+        & > a {
+            position: absolute;
+            text-decoration: none;  
+            left: 0;
+            top: 0;
+            color: inherit;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@for $i from 1 to 6 {
+    .page-#{$i} {
+        #pagination li:nth-of-type(#{$i}) {
+            @extend %active-dot;
+        }
+    }
+}
+
+%active-dot {
+    transform: scale(2);
+}

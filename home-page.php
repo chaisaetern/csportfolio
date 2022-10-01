@@ -20,9 +20,13 @@
     
     <!-- Projects Page -->
     <?php get_template_part('template-parts/projects-page'); ?>
+
+
+
+
+    <!-- Pagination for Scrolling -->
+    <?php get_template_part('template-parts/pagination'); ?>
     
-
-
 </div>
 
 <?php get_footer(); ?>

@@ -165,6 +165,7 @@ add_action('wp_enqueue_scripts', 'portfolio_include_custom_jquery');
 function scroll_script() {
 	wp_enqueue_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js', array(), null, true);
 	wp_enqueue_script( 'customScrollify', get_template_directory_uri() . '/js/customScrollify.js', array( 'jquery' ), '1.0.0', true );
+	wp_enqueue_script( 'pagination', get_template_directory_uri() . '/js/pagination.js', array( 'jquery' ), '1.0.0', true );
 }
 add_action('wp_enqueue_scripts', 'scroll_script');
 
