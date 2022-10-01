@@ -155,7 +155,6 @@ add_action( 'wp_enqueue_scripts', 'csportfolio_scripts' );
 function portfolio_include_custom_jquery() {
 	wp_deregister_script('jquery');
 	wp_enqueue_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js', array(), null, true);
-	// wp_enqueue_script('fullpage', 'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.js', array(), null, true);
 }
 add_action('wp_enqueue_scripts', 'portfolio_include_custom_jquery');
 
