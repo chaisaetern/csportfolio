@@ -843,7 +843,7 @@ textarea {
 *       - font-family: 'Quicksand', sans-serif;
 *
 */
-.entry-title {
+.entry-title, .entry-footer {
   display: none;
 }
 
@@ -873,7 +873,6 @@ textarea {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: #050707;
   color: rgba(0, 255, 0, 0.7450980392);
 }
 .landing-page .lp-left, .landing-page .lp-right {
@@ -887,6 +886,17 @@ textarea {
 }
 .landing-page .lp-left > p {
   color: #fff;
+  text-shadow: 0 0 1px #fff;
+  position: relative;
+}
+.landing-page .lp-left > p > span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 5rem !important;
+  border: 2px solid rgba(0, 156, 0, 0.7450980392);
+  border-radius: 5px;
+  animation: pace 1.7s infinite;
 }
 .landing-page .lp-left > h1 {
   margin: 0;
@@ -895,19 +905,40 @@ textarea {
   text-align: right;
   font-family: "Long Shot", sans-serif;
   color: #050707;
-  -webkit-text-stroke: 3px rgba(0, 255, 0, 0.7450980392);
+  -webkit-text-stroke: 3px rgba(0, 156, 0, 0.7450980392);
 }
 .landing-page .lp-left > a {
   text-decoration: none;
+  text-transform: uppercase;
+  color: #eee;
+  text-shadow: 0 0 1px #eee;
+  font-weight: bold;
+  transition: 0.25s;
+}
+.landing-page .lp-left > a:hover {
+  color: rgba(0, 255, 0, 0.7450980392);
+  text-shadow: 0 0 1px rgba(0, 255, 0, 0.7450980392);
 }
 .landing-page .lp-right .lp-img-container {
   width: 20rem;
   height: 20rem;
 }
 .landing-page .lp-right .lp-img-container > img {
+  display: none;
   mix-blend-mode: hard-light;
 }
 
+@keyframes pace {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 55%;
+  }
+  100% {
+    left: 0;
+  }
+}
 /*
 *   About Page Styling
 *

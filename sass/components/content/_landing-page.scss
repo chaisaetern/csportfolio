@@ -17,10 +17,9 @@
 */
 
 // Video Background Styling
-.entry-title {
+.entry-title, .entry-footer {
     display: none;
 }
-
 .entry-content {
     width: 100%;
     height: 100vh;
@@ -39,7 +38,7 @@
     }
 }
 
-
+// Landing Page Styling
 .landing-page {
     width: 100%;
     height: 100vh;
@@ -48,7 +47,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: #050707;
+    // background: #050707;
     color: #00ff00be;
 
     .lp-left, .lp-right {
@@ -65,6 +64,18 @@
         // 
         & > p {
             color: #fff;
+            text-shadow: 0 0 1px #fff;
+            position: relative;
+            & > span {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 5rem !important;
+                border: 2px solid #009c00be;
+                border-radius: 5px;
+
+                animation: pace 1.7s infinite;
+            }
         }
         & > h1 {
             margin: 0;
@@ -73,10 +84,19 @@
             text-align: right;
             font-family: 'Long Shot', sans-serif;
             color: #050707;
-            -webkit-text-stroke: 3px #00ff00be;
+            -webkit-text-stroke: 3px #009c00be;
         }
         & > a {
             text-decoration: none;
+            text-transform: uppercase;
+            color: #eee;
+            text-shadow: 0 0 1px #eee;
+            font-weight: bold;
+            transition: 0.25s;
+            &:hover {
+                color: #00ff00be;
+                text-shadow: 0 0 1px #00ff00be;
+            }
         }
     }
 
@@ -87,6 +107,7 @@
             width: 20rem;
             height: 20rem;
             & > img {
+                display: none;
                 mix-blend-mode: hard-light;
             }
         }
@@ -94,4 +115,17 @@
 
 
 
+}
+
+
+@keyframes pace {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 55%;
+    }
+    100% {
+        left: 0;
+    }
 }

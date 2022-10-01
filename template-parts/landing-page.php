@@ -28,9 +28,9 @@
 
     <!-- Left Landing Page -->
     <div class="lp-left">
-        <p>Welcome to my website.</p>
-        <h1>LANDING <br>PAGE</h1>
-        <a href="#">Scroll Down</a>
+        <p><span></span>Welcome to my website.</p>
+        <h1>PORTFOLIO<br>*CS</h1>
+        <a href="#">Scroll Down <i class="fa-solid fa-arrow-down-wide-short"></i></a>
     </div>
 
         
