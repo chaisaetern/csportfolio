@@ -41,7 +41,7 @@
 
     // About Information (Hobbies, Skills)
     .ap-info {
-        // width: 20rem;
+        width: 50%;
         height: 100%;
         z-index: 1;
         display: flex;
@@ -126,18 +126,18 @@
 
     // Skills Header
     .ap-skill-header {
-        width: auto;
+        width: 15vw;
         height: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         z-index: 2;
         color: transparent;
-        text-shadow: 0 0 10px #1e776a;
-        -webkit-text-stroke: 1px #001;
+        text-shadow: 0 0 10px #000000;
+        -webkit-text-stroke: 1px #3CBDA9;
         position: relative;
         top: 0;
-        left: 8rem;
+        left: 5rem;
         & > h1 {
             font-family: "Long Shot", sans-serif;
             font-size: 5rem;
