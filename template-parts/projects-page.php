@@ -10,12 +10,16 @@
 
 <div class="projects-page section page" id="page3" data-id="projects">
 
-    
-    <div class="pallet-container">
-        <div class="pallet"></div>
-        <div class="pallet"></div>
-        <div class="pallet"></div>
-        <div class="pallet"></div>
+    <div class="projects">
+        <div class="project"><h4>Project</h4></div>
+        <div class="project"><h4>Project</h4></div>
+        <div class="project"><h4>Project</h4></div>
+        <div class="project"><h4>Project</h4></div>
+        <div class="project"><h4>Project</h4></div>
+        <div class="project"><h4>Project</h4></div>
+        <div class="project"><h4>Project</h4></div>
+        <div class="project"><h4>Project</h4></div>
+        <div class="project"><h4>Project</h4></div>
     </div>
 
     

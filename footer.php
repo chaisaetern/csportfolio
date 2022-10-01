@@ -11,7 +11,7 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
+	<footer id="page4" class="page section site-footer">
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'csportfolio' ) ); ?>">
 				<?php

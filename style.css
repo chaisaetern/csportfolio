@@ -655,7 +655,7 @@ textarea {
 /* Navigation
 --------------------------------------------- */
 .main-navigation {
-  display: block;
+  display: none;
 }
 .main-navigation ul {
   display: none;
@@ -1135,28 +1135,46 @@ textarea {
   background: #050707;
   z-index: 1;
 }
-.projects-page .pallet-container {
-  display: flex;
-  flex-direction: row;
-  align-items: start;
+.projects-page .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+  gap: 0;
+  width: 100%;
+  height: 100%;
+  color: gold;
+}
+.projects-page .projects .project {
+  display: grid;
+  place-items: center;
+  transition: 0.25s;
+}
+.projects-page .projects .project:hover {
+  background: #8a7500;
+  color: #000;
+}
+
+/*
+*   Footer Styling
+*
+*   !! sass --watch ./sass/style.scss:./style.css
+* 
+*   !! ~ Keep things organized, please.
+*   !! ~ Call from variables/mixins
+* 
+*   !! ~ FONTS
+~   Header font:
+*       - font-family: 'Kaushan Script', cursive;
+*       - font-family: 'Rubik Dirt', cursive;
+*       - font-family: 'Righteous', cursive;
+~   Paragraph font:
+*       - font-family: 'Quicksand', sans-serif;
+*
+*/
+.site-footer {
   width: 100%;
   height: 100vh;
-}
-.projects-page .pallet-container > div {
-  width: 2rem;
-  height: 4rem;
-}
-.projects-page .pallet-container > div:nth-child(1) {
-  background: #edd200;
-}
-.projects-page .pallet-container > div:nth-child(2) {
-  background: #191919;
-}
-.projects-page .pallet-container > div:nth-child(3) {
-  background: #202020;
-}
-.projects-page .pallet-container > div:nth-child(4) {
-  background: #bbbbbb;
+  display: grid;
+  place-items: center;
 }
 
 /* Comments
