@@ -9,7 +9,7 @@
 
 <?php get_header(); ?>
 
-<div class="home-page">
+<div class="home-page" id="fullpage">
 
     
     <!-- Landing Page -->

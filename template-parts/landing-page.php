@@ -7,7 +7,7 @@
  */
 ?>
 <!-- Landing Page -->
-<div class="landing-page">
+<div class="landing-page section" data-id="landing">
 
 <!-- Calls Block Post (Using for video background) -->
 <?php

@@ -8,7 +8,7 @@
 ?>
 <!-- Projects Page -->
 
-<div class="projects-page">
+<div class="projects-page section" data-id="projects">
 
     
     <div class="pallet-container">

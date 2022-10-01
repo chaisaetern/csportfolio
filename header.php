@@ -22,8 +22,12 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Quicksand&family=Righteous&family=Rubik+Dirt&display=swap" rel="stylesheet">
 	
+	<!-- Font Awesome Kit -->
 	<script src="https://kit.fontawesome.com/8ea15955cd.js" crossorigin="anonymous"></script>
 
+	<!-- Load jQuery -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+	
 	<?php wp_head(); ?>
 </head>
 
