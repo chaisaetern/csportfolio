@@ -96,8 +96,17 @@
 
             <?php } ?>
 
-            
+        </div>
 
+        <div class="ap-skill-header">
+            <h1>
+                S<br>
+                K<br>
+                I<br>
+                L<br>
+                L<br>
+                S<br>
+            </h1>
         </div>
     
     </div>
