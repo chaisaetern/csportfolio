@@ -25,15 +25,15 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    // background: linear-gradient(to bottom, #000, #050707);
     background: none;
+
     .about-bg {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: fit-content;
-        z-index: -1;
+        z-index: 1;
         filter: brightness(0.1);
     }
 
@@ -41,9 +41,87 @@
 
     // About Information (Hobbies, Skills)
     .ap-info {
-        width: 50vw;
+        width: 20rem;
         height: 100%;
-        
+        z-index: 1;
+
+
+        & > h1 {
+            font-size: 5rem;
+        }
+
+        .ap-skills {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            
+            .skill {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 100%;
+                
+                &:nth-child(2n) {
+                    justify-content: flex-end;
+                    align-items: center;
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                & > h1 {
+                    font-size: 2.5rem;
+                    display: grid;
+                    place-items: center;
+                    margin: 0 0.25rem;
+                    min-width: 5rem;
+                    border-radius: 50%;
+                }
+
+                .skill-icon {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    height: 100%;
+
+                    & > svg {
+                        position: absolute;
+                        height: 70px;
+                        width: 86.4px;
+                        & > path {
+                            stroke: #1e776a;
+                            fill: #1e776a;
+                        }
+                    }
+                    
+                }
+                
+                .skill-desc {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    margin-left: 2rem;
+                    & > h5 {
+                        letter-spacing: 1.5px;
+                        margin: 0;
+                    }
+
+                    & > p {
+                        margin: 0;
+                        color: #1e776a;
+                        text-shadow: 0 0 1px #1e776a;
+                    }
+                }
+            }
+        }
     }
 
 }
+

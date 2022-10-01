@@ -22,6 +22,9 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Quicksand&family=Righteous&family=Rubik+Dirt&display=swap" rel="stylesheet">
 	
+	<!-- Coding Language Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
 	<!-- Font Awesome Kit -->
 	<script src="https://kit.fontawesome.com/8ea15955cd.js" crossorigin="anonymous"></script>
 

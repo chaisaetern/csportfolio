@@ -29,7 +29,7 @@
     <!-- Left Landing Page -->
     <div class="lp-left">
         <p><span></span>Welcome to my website.</p>
-        <h1>PORTFOLIO<br>*CS</h1>
+        <h1>PORTFOLIO<br>CHAI</h1>
         <a href="#">Scroll<br>Down<br><i class="fa-solid fa-arrow-down-wide-short"></i></a>
     </div>
 
