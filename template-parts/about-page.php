@@ -10,13 +10,15 @@
 
 <div class="about-page">
 
-    
-    <div class="pallet-container">
-        <div class="pallet"></div>
-        <div class="pallet"></div>
-        <div class="pallet"></div>
-        <div class="pallet"></div>
-    </div>
+    <!-- About Background -->
+    <!-- <div class="about-background">
+        <img src="<?php the_field('about_background'); ?>" alt="">
+    </div> -->
 
     
+
+    <div class="ap-info">
+
+    </div>
+
 </div>

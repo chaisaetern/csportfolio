@@ -23,37 +23,28 @@
     position: relative;
     // color: #000;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: #050707;
+    background: linear-gradient(to bottom, #000, #050707);
 
-    .pallet-container {
-        display: flex;
-        flex-direction: row;
-        // justify-content: start;
-        align-items: start;
-        width: 100%;
-        height: 100vh;
-
-        & > div {
-            width: 2rem;
-            height: 4rem;
-            &:nth-child(1) {
-                background: #00fffd;
-            }
-            &:nth-child(2) {
-                background: #7000bf;
-            }
-            &:nth-child(3) {
-                background: #0b0120;
-            }
-            &:nth-child(4) {
-                background: #101010;
-            }
+    .about-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        & > img {
+            filter: brightness(0.5);
         }
     }
 
 
+
+    // About Information (Hobbies, Skills)
+    .ap-info {
+        width: 50vw;
+        height: 100%;
+        border: 1px solid #fff;
+    }
 
 }

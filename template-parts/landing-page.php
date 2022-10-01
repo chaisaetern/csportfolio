@@ -36,9 +36,31 @@
         
     <!-- right Landing Page -->
     <div class="lp-right">
-        <div class="lp-img-container">
-            <img src="<?php the_field('landing_page_image'); ?>" alt="">
+
+        <!-- Author -->
+        <div class="lp-author">
+
+        <div class="lp-author-img-container">
+            <img src="<?php the_field('author_image'); ?>" alt="Author">
         </div>
+
+        <h5>Chai Saetern</h5>
+
+        <p>WordPress</p>
+
+        <p>Front-End Developer</p>
+
+        <div class="lp-socials">
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""><i class="fa-brands fa-github-alt"></i></a>
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+            <a href=""><i class="fa-brands fa-discord"></i></a>
+            <a href=""><i class="fa-brands fa-steam-symbol"></i></a>
+        </div>
+
+    </div>
+
+
     </div>
     
 </div>
