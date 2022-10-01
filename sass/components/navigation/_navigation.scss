@@ -39,10 +39,12 @@
 
 			:hover > a,
 			.focus > a {
+				color: #ddd;
 			}
 
 			a:hover,
 			a.focus {
+				color: #ddd;
 			}
 		}
 
@@ -65,14 +67,15 @@
 	a {
 		display: block;
 		text-decoration: none;
-		color: gold;
-		text-shadow: 0 0 1px gold;
+		color: #fff;
+		text-shadow: 0 0 1px #fff;
 	}
 
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
+		color: #ddd;
 	}
 }
 

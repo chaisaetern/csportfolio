@@ -681,6 +681,14 @@ textarea {
 .main-navigation ul ul a {
   width: 200px;
 }
+.main-navigation ul ul :hover > a,
+.main-navigation ul ul .focus > a {
+  color: #ddd;
+}
+.main-navigation ul ul a:hover,
+.main-navigation ul ul a.focus {
+  color: #ddd;
+}
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   left: auto;
@@ -695,9 +703,16 @@ textarea {
 .main-navigation a {
   display: block;
   text-decoration: none;
-  color: gold;
-  text-shadow: 0 0 1px gold;
+  color: #fff;
+  text-shadow: 0 0 1px #fff;
 }
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_ancestor > a,
+.main-navigation .current-menu-ancestor > a {
+  color: #ddd;
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -786,6 +801,10 @@ textarea {
 }
 .site-header .site-title > a {
   text-decoration: none;
+  transition: 0.25s;
+}
+.site-header .site-title > a:hover {
+  color: #ddd;
 }
 .site-header .site-branding {
   display: flex;

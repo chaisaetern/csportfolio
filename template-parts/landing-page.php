@@ -30,7 +30,7 @@
     <div class="lp-left">
         <p><span></span>Welcome to my website.</p>
         <h1>PORTFOLIO<br>*CS</h1>
-        <a href="#">Scroll Down <i class="fa-solid fa-arrow-down-wide-short"></i></a>
+        <a href="#">Scroll<br>Down<br><i class="fa-solid fa-arrow-down-wide-short"></i></a>
     </div>
 
         
