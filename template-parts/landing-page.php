@@ -11,7 +11,7 @@
 
     <!-- https://youtu.be/1tMAstgh4TU?list=PLZ2Ee0n3vmhNylAHcq065fSP6jWP3jRp- -->
     <video class="landing-bg" autoplay muted loop>
-        <source src="http://csportfolio.local/wp-content/uploads/2022/10/videoplayback2.mp4" type="video/mp4">
+        <source src="https://chaisaetern.tech/wp-content/uploads/2022/10/videoplayback2.mp4" type="video/mp4">
         <!-- <source src="http://csportfolio.local/wp-content/uploads/2022/10/csgo_awp_ace_comp_unranked.mp4" type="video/mp4"> -->
         <!-- <source src="http://csportfolio.local/wp-content/uploads/2022/10/My-Movie.mp4" type="video/mp4"> -->
         Your browser does not support the video tag.
