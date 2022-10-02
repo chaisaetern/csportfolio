@@ -23,7 +23,7 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background: none;
 
@@ -36,115 +36,5 @@
         z-index: 1;
         filter: brightness(0.1);
     }
-
-
-
-    // About Information (Hobbies, Skills)
-    .ap-info {
-        width: 50%;
-        height: 100%;
-        z-index: 1;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-
-
-        & > h1 {
-            font-size: 5rem;
-        }
-
-        .ap-skills {
-            width: 30%;
-            height: auto;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            
-            .skill {
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                width: 100%;
-                
-                &:nth-child(2n) {
-                    justify-content: flex-end;
-                    align-items: center;
-                    margin: 0;
-                    padding: 0;
-                }
-
-                .skill-icon {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    position: relative;
-                    height: 100%;
-
-                    & > h1 {
-                        font-size: 2rem;
-                        display: grid;
-                        place-items: center;
-                        min-width: 5rem;
-                    }
-
-                    & > svg {
-                        position: absolute;
-                        height: 70px;
-                        width: 86.4px;
-                        & > path {
-                            stroke: #1e776a;
-                            fill: #1e776a;
-                        }
-                    }
-                    
-                }
-                
-                .skill-desc {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: flex-start;
-
-                    & > h5 {
-                        letter-spacing: 1.5px;
-                        margin: 0;
-                    }
-
-                    & > p {
-                        margin: 0;
-                        color: #1e776a;
-                        text-shadow: 0 0 1px #1e776a;
-                    }
-                }
-            }
-        }
-    }
-
-    // Skills Header
-    .ap-skill-header {
-        width: 15vw;
-        height: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        z-index: 2;
-        color: transparent;
-        text-shadow: 0 0 10px #000000;
-        -webkit-text-stroke: 1px #3CBDA9;
-        position: relative;
-        top: 0;
-        left: 5rem;
-        & > h1 {
-            font-family: "Long Shot", sans-serif;
-            font-size: 5rem;
-            line-height: 5rem;
-            margin: 0;
-        }
-    }
-
 }
 

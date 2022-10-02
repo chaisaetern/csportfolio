@@ -1,0 +1,106 @@
+$cyan: #3CBDA9;
+
+// Skills Header
+.skill-header {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 2;
+    color: transparent;
+    -webkit-text-stroke: 1px #3cbdaa36;
+    & > h1 {
+        font-family: "Long Shot", sans-serif;
+        font-size: 5rem;
+        line-height: 5rem;
+        margin: 0;
+        text-align: left;
+    }
+}
+
+// Skils
+.skills-container {
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+    & > h1 {
+        font-size: 5rem;
+    }
+
+    .skills {
+        width: 15vw;
+        height: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        
+        .skill {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            z-index: 1;
+            
+            &:nth-child(2n + 1) {
+                align-items: center;
+                margin: 0;
+                margin-right: 10rem;
+                padding: 0;
+            }
+
+            .skill-icon {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                height: 100%;
+
+                & > h1 {
+                    font-size: 2rem;
+                    display: grid;
+                    place-items: center;
+                    min-width: 5rem;
+                    &:nth-child(2n + 1) {
+                        text-align: right;
+                    }
+                }
+
+                & > svg {
+                    position: absolute;
+                    height: 70px;
+                    width: 86.4px;
+                    & > path {
+                        stroke: none;
+                        fill: $cyan;
+                    }
+                }
+                
+            }
+            
+            .skill-desc {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+                & > h5 {
+                    letter-spacing: 1.5px;
+                    margin: 0;
+                }
+
+                & > p {
+                    margin: 0;
+                    color: $cyan;
+                    text-shadow: 0 0 1px $cyan;
+                }
+            }
+        }
+    }
+}

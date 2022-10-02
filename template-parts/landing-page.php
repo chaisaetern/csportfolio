@@ -27,10 +27,18 @@
 ?>
 
     <!-- Left Landing Page -->
-    <div class="lp-left">
-        <p><span></span>Welcome to my website.</p>
-        <h1>PORTFOLIO<br>CHAI</h1>
-        <a href="#">Scroll<br>Down<br><i class="fa-solid fa-arrow-down-wide-short"></i></a>
+    <div class="lp-left square-wrap parallax">
+        <p><span></span><?php printf( esc_html__( '%s', 'csportfolio' ), 'Welcome to my website.' ); ?></p>
+        <h1><?php printf( esc_html__( '%s', 'csportfolio' ), 'PORTFOLIO' ); ?>
+            <br>
+            <?php printf( esc_html__( '%s', 'csportfolio' ), 'CHAI' ); ?>
+        </h1>
+        <a href="#"><?php printf( esc_html__( '%s', 'csportfolio' ), 'Scroll' ); ?>
+            <br>
+            <?php printf( esc_html__( '%s', 'csportfolio' ), 'Down' ); ?>
+            <br>
+            <i class="fa-solid fa-arrow-down-wide-short"></i>
+        </a>
     </div>
 
         
@@ -44,11 +52,11 @@
             <img src="<?php the_field('author_image'); ?>" alt="Author">
         </div>
 
-        <h5>Chai Saetern</h5>
+        <h5><?php printf( esc_html__( '%s', 'csportfolio' ), 'Chai Saetern' ); ?></h5>
 
-        <p>WordPress</p>
+        <p><?php printf( esc_html__( '%s', 'csportfolio' ), 'WordPress' ); ?></p>
 
-        <p>Front-End Developer</p>
+        <p><?php printf( esc_html__( '%s', 'csportfolio' ), 'Front-End Developer' ); ?></p>
 
         <div class="lp-socials">
             <a href=""><i class="fa-brands fa-linkedin-in"></i></a>

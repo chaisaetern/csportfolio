@@ -9,9 +9,8 @@
 
 <?php get_header(); ?>
 
-<div class="home-page" id="fullpage">
+<div class="home-page" id="full-page">
 
-    
     <!-- Landing Page -->
     <?php get_template_part('template-parts/landing-page'); ?>
 
@@ -22,8 +21,7 @@
     <?php get_template_part('template-parts/projects-page'); ?>
 
 
-
-
+    
     <!-- Pagination for Scrolling -->
     <?php get_template_part('template-parts/pagination'); ?>
     
