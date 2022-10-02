@@ -20,6 +20,4 @@
 
     <?php get_template_part('template-parts/skills'); ?>
 
-    <?php get_template_part('template-parts/hobbies'); ?>
-
 </div>

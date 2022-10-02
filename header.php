@@ -15,13 +15,15 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<!-- Custom Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Quicksand&family=Righteous&family=Rubik+Dirt&display=swap" rel="stylesheet">
-	
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Quicksand&family=Righteous&family=Rubik+Dirt&family=Titillium+Web&display=swap" rel="stylesheet">
+	<link href="http://fonts.cdnfonts.com/css/long-shot" rel="stylesheet">
+
 	<!-- Coding Language Icons -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 

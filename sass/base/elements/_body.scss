@@ -19,11 +19,14 @@
 body {
 	background: $color__background-body; // Fallback for when there is no custom background color defined.
 
-	font-family: 'Quicksand', sans-serif;
+	// font-family: 'Quicksand', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
 
 	h1, h2, h3, h4, h5, h6 {
 		// font-family: 'Rubik Dirt', cursive;
-		font-family: 'Righteous', cursive;
+		// font-family: 'Righteous', cursive;
+		font-family: 'Titillium Web', sans-serif;
+		font-weight: bolder;
 	}
 	
 }

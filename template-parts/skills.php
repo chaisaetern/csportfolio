@@ -8,7 +8,7 @@
 ?>
 <!-- Skills Template Part -->
 
-<div class="skills-container reveal fade-left">
+<div class="skills-container">
 
     <div class="skills">
 
@@ -19,41 +19,49 @@
                     'name' => 'HTML',
                     'exp' => 'Experienced',
                     'icon' => '<i class="devicon-html5-plain"></i>',
+                    'status' => 'active'
                 ),
                 array(
                     'name' => 'CSS',
                     'exp' => 'Experienced',
                     'icon' => '<i class="devicon-css3-plain"></i>',
+                    'status' => 'active'
                 ),
                 array(
                     'name' => 'JS/ES6',
                     'exp' => 'Experienced',
                     'icon' => '<i class="devicon-javascript-plain"></i>',
+                    'status' => 'active'
                 ),
                 array(
                     'name' => 'React',
                     'exp' => 'Experienced',
                     'icon' => '<i class="devicon-react-original"></i>',
+                    'status' => 'inactive'
                 ),
                 array(
                     'name' => 'PHP/WordPress',
                     'exp' => 'Medium',
                     'icon' => '<i class="devicon-php-plain"></i>',
+                    'status' => 'active'
                 ),
                 array(
                     'name' => 'NodeJS',
                     'exp' => 'Medium',
                     'icon' => '<i class="devicon-nodejs-plain"></i>',
+                    'status' => 'inactive'
                 ),
                 array(
                     'name' => 'mySQL',
                     'exp' => 'Medium',
                     'icon' => '<i class="devicon-mysql-plain"></i>',
+                    'status' => 'inactive'
                 ),
                 array(
                     'name' => 'mongodb',
                     'exp' => 'Medium',
                     'icon' => '<i class="devicon-mongodb-plain"></i>',
+                    'status' => 'inactive'
                 ),
             );
 
@@ -62,7 +70,7 @@
 
         ?>
 
-        <div class="skill">
+        <div class="skill parallax" data-offset="20">
 
             <div class="skill-icon">
                 
@@ -77,6 +85,8 @@
                 <h5>✪<?php echo $skills[$i]['name']; ?></h5>
 
                 <p><?php echo $skills[$i]['exp']; ?></p>
+
+                <p class="<?php echo $skills[$i]['status'] ?>"><?php echo $skills[$i]['status']; ?></p>
                 
             </div>
 
@@ -86,7 +96,7 @@
 
     </div>
 
-    <div class="skill-header">
+    <div class="skill-header parallax" data-offset="7">
         <h1>
             <?php printf( esc_html__( '%s', 'csportfolio' ), 'S' ); ?><br>
             <?php printf( esc_html__( '%s', 'csportfolio' ), 'K' ); ?><br>

@@ -13,6 +13,7 @@
     <div class="projects">
 
     <?php 
+    
     $projects = array(
         array(
             'name' => 'Project 1',

@@ -9,27 +9,18 @@
 <!-- Landing Page -->
 <div class="landing-page section page" id="page1" data-id="landing">
 
-<!-- Calls Block Post (Using for video background) -->
-<?php
-
-    while ( have_posts() ) :
-        the_post();
-        
-        get_template_part( 'template-parts/content', 'page' );
-        
-        // If comments are open or we have at least one comment, load up the comment template.
-        if ( comments_open() || get_comments_number() ) :
-            comments_template();
-        endif;
-        
-    endwhile; // End of the loop.
-
-?>
+    <!-- https://youtu.be/1tMAstgh4TU?list=PLZ2Ee0n3vmhNylAHcq065fSP6jWP3jRp- -->
+    <video class="landing-bg" autoplay muted loop>
+        <source src="http://csportfolio.local/wp-content/uploads/2022/10/videoplayback2.mp4" type="video/mp4">
+        <!-- <source src="http://csportfolio.local/wp-content/uploads/2022/10/csgo_awp_ace_comp_unranked.mp4" type="video/mp4"> -->
+        <!-- <source src="http://csportfolio.local/wp-content/uploads/2022/10/My-Movie.mp4" type="video/mp4"> -->
+        Your browser does not support the video tag.
+    </video>
 
     <!-- Left Landing Page -->
-    <div class="lp-left parallax">
+    <div class="lp-left parallax" data-offset="20">
         <p><span></span><?php printf( esc_html__( '%s', 'csportfolio' ), 'Welcome to my website.' ); ?></p>
-        <h1><?php printf( esc_html__( '%s', 'csportfolio' ), 'PORTFOLIO' ); ?>
+        <h1 class><?php printf( esc_html__( '%s', 'csportfolio' ), 'PORTFOLIO' ); ?>
             <br>
             <?php printf( esc_html__( '%s', 'csportfolio' ), 'CHAI' ); ?>
         </h1>
@@ -46,7 +37,7 @@
     <div class="lp-right">
 
         <!-- Author -->
-        <div class="lp-author parallax">
+        <div class="lp-author">
 
             <div class="lp-author-img-container">
                 <img src="<?php the_field('author_image'); ?>" alt="Author">

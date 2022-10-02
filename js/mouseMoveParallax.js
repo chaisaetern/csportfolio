@@ -1,35 +1,23 @@
-var currentX = '';
-var currentY = '';
-var movementConstant = .025; 
 
-$(document).mousemove(function(e) {
-  if (currentX == '') currentX = e.pageX;
-  var xdiff = e.pageX - currentX;
-  currentX = e.pageX;
-  if (currentY == '') currentY = e.pageY;
-  var ydiff = e.pageY - currentY;
-  currentY = e.pageY;
+//Inspired from the work of //
+//Illustration by http://psdblast.com/flat-color-abstract-city-background-psd
+$(window).on('mousemove', function(e) {
+  var w = $(window).width();
+  var h = $(window).height();
+  var offsetX = 0.5 - e.pageX / w;
+  var offsetY = 0.5 - e.pageY / h;
 
-  $('.parallax:nth-child(2n)').each(function(i, el) {
-    var movement = (i + 1) * (xdiff * movementConstant);
-    var movementy = (i + 1) * (ydiff * movementConstant);
-    var newX = $(el).position().left + movement;
-    var newY = $(el).position().top + movementy;
-    var cssObj = {
-      'left': newX + 'px',
-      'top': newY + 'px'
-    };
-    console.log(el)
-    // $(el).css('left', newX + 'px');
-    // $(el).css('top', newY + 'px');
-    $(el).css({
-      "transform": "translate(" + newX + "px," + newY + "px)"
-    });
+  $(".parallax").each(function(i, el) {
+      var offset = parseInt($(el).data('offset'));
+      var translate = "translate3d(" + Math.round(offsetX * offset) + "px," + Math.round(offsetY * offset) + "px, 0px)";
+
+      $(el).css({
+          '-webkit-transform': translate,
+          'transform': translate,
+          'moz-transform': translate
+      });
   });
 });
-
-
-
 
 
 
