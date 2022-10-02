@@ -1,6 +1,6 @@
 var currentX = '';
 var currentY = '';
-var movementConstant = .025; //值越大移動越大
+var movementConstant = .025; 
 
 $(document).mousemove(function(e) {
   if (currentX == '') currentX = e.pageX;
@@ -19,7 +19,7 @@ $(document).mousemove(function(e) {
       'left': newX + 'px',
       'top': newY + 'px'
     };
-
+    console.log(el)
     // $(el).css('left', newX + 'px');
     // $(el).css('top', newY + 'px');
     $(el).css({
@@ -29,12 +29,6 @@ $(document).mousemove(function(e) {
 });
 
 
-
-
-
-$('.projects').on('click', function(e) {
-	e.preventDefault()
-})
 
 
 

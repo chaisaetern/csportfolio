@@ -8,7 +8,7 @@
 ?>
 <!-- Skills Template Part -->
 
-<div class="skills-container">
+<div class="skills-container reveal fade-left">
 
     <div class="skills">
 

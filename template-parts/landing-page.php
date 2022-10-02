@@ -27,7 +27,7 @@
 ?>
 
     <!-- Left Landing Page -->
-    <div class="lp-left square-wrap parallax">
+    <div class="lp-left parallax">
         <p><span></span><?php printf( esc_html__( '%s', 'csportfolio' ), 'Welcome to my website.' ); ?></p>
         <h1><?php printf( esc_html__( '%s', 'csportfolio' ), 'PORTFOLIO' ); ?>
             <br>
@@ -46,27 +46,27 @@
     <div class="lp-right">
 
         <!-- Author -->
-        <div class="lp-author">
+        <div class="lp-author parallax">
 
-        <div class="lp-author-img-container">
-            <img src="<?php the_field('author_image'); ?>" alt="Author">
+            <div class="lp-author-img-container">
+                <img src="<?php the_field('author_image'); ?>" alt="Author">
+            </div>
+
+            <h5><?php printf( esc_html__( '%s', 'csportfolio' ), 'Chai Saetern' ); ?></h5>
+
+            <p><?php printf( esc_html__( '%s', 'csportfolio' ), 'WordPress' ); ?></p>
+
+            <p><?php printf( esc_html__( '%s', 'csportfolio' ), 'Front-End Developer' ); ?></p>
+
+            <div class="lp-socials">
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href=""><i class="fa-brands fa-github-alt"></i></a>
+                <a href=""><i class="fa-solid fa-envelope"></i></a>
+                <a href=""><i class="fa-brands fa-discord"></i></a>
+                <a href=""><i class="fa-brands fa-steam-symbol"></i></a>
+            </div>
+
         </div>
-
-        <h5><?php printf( esc_html__( '%s', 'csportfolio' ), 'Chai Saetern' ); ?></h5>
-
-        <p><?php printf( esc_html__( '%s', 'csportfolio' ), 'WordPress' ); ?></p>
-
-        <p><?php printf( esc_html__( '%s', 'csportfolio' ), 'Front-End Developer' ); ?></p>
-
-        <div class="lp-socials">
-            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href=""><i class="fa-brands fa-github-alt"></i></a>
-            <a href=""><i class="fa-solid fa-envelope"></i></a>
-            <a href=""><i class="fa-brands fa-discord"></i></a>
-            <a href=""><i class="fa-brands fa-steam-symbol"></i></a>
-        </div>
-
-    </div>
 
 
     </div>
