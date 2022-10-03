@@ -1607,6 +1607,10 @@ textarea {
   font-size: 1.25rem;
   text-align: left;
 }
+#pagination > li > a > h6:hover {
+  color: #555;
+  text-shadow: 0 0 1px #555;
+}
 
 .page-1 #pagination li:nth-of-type(1), .page-2 #pagination li:nth-of-type(2), .page-3 #pagination li:nth-of-type(3), .page-4 #pagination li:nth-of-type(4), .page-5 #pagination li:nth-of-type(5) {
   transform: scale(1.5);
