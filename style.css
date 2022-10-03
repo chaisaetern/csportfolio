@@ -1249,6 +1249,11 @@ textarea {
   color: #fff;
   text-shadow: 0 0 1px #fff;
   transition: 0.25s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0.25rem 0;
 }
 .site-footer .footer-bottom .footer-row .footer-languages-used > a:hover,
 .site-footer .footer-bottom .footer-row .footer-socials > a:hover,
@@ -1260,7 +1265,22 @@ textarea {
 .site-footer .footer-bottom .footer-row .footer-socials > a > i,
 .site-footer .footer-bottom .footer-row .footer-contact > a > i {
   text-align: left;
-  padding: 2px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 1.5rem;
+}
+.site-footer .footer-bottom .footer-row .footer-languages-used > a > i::before,
+.site-footer .footer-bottom .footer-row .footer-socials > a > i::before,
+.site-footer .footer-bottom .footer-row .footer-contact > a > i::before {
+  padding-right: 5px;
+  margin: 0;
+}
+.site-footer .footer-bottom .footer-row .footer-languages-used > a > span,
+.site-footer .footer-bottom .footer-row .footer-socials > a > span,
+.site-footer .footer-bottom .footer-row .footer-contact > a > span {
+  width: 100%;
+  text-align: left;
 }
 .site-footer .footer-bottom .footer-row .footer-languages-used > p,
 .site-footer .footer-bottom .footer-row .footer-socials > p,

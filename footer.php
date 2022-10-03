@@ -40,16 +40,15 @@
 
 				<div class="footer-socials">
 					<h3>Socials</h3>
-					<a href="#"><i class="fa-solid fa-envelope"></i> Email</a>
-					<a href="#"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
-					<a href="#"><i class="fa-brands fa-github"></i> Github</i></a>
-					<a href="#"><i class="fa-brands fa-discord"></i> Discord</i></a>
+					<a href="#"><i class="fa-solid fa-square-envelope"></i> <span>Email</span></a>
+					<a href="#"><i class="fa-brands fa-linkedin"></i> <span>LinkedIn</span></a>
+					<a href="#"><i class="fa-brands fa-square-github"></i> <span>Github</span></i></a>
 				</div>
 				
 				<div class="footer-contact">
 					<h3>Other</h3>
-					<a href="#">Resumé</a>
-					<a href="#">Projects</a>
+					<a href="#"><i class="fa-solid fa-file"></i> <span>Resumé</span></a>
+					<a href="#"><i class="fa-solid fa-bars-progress"></i> <span>Projects</span></a>
 				</div>
 
 			</div>
