@@ -11,7 +11,7 @@
 $(function(){
     $.scrollify({
         section : ".section",
-        sectionName : "data-id",
+        sectionName : false,
         interstitialSection : "",
         easing: "easeOutExpo",
         scrollSpeed: 800,
@@ -20,8 +20,8 @@ $(function(){
         standardScrollElements: "",
         setHeights: true,
         overflowScroll: true,
-        updateHash: true,
-        touchScroll:true,
+        updateHash: false,
+        touchScroll: true,
         before:function() {},
         after:function() {},
         afterResize:function() {},

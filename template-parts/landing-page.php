@@ -20,7 +20,10 @@
     <!-- Left Landing Page -->
     <div class="lp-left parallax" data-offset="20">
 
-        <h2><span></span><?php printf( esc_html__( '%s', 'csportfolio' ), 'Hello, my name is' ); ?></h2>
+        <h2>
+            <span></span>
+            <?php printf( esc_html__( '%s', 'csportfolio' ), 'Hello, my name is' ); ?>
+        </h2>
 
         <h1>
 
@@ -52,6 +55,8 @@
             <p><?php printf( esc_html__( '%s', 'csportfolio' ), 'Front-End Developer' ); ?></p>
 
             <div class="lp-socials">
+                
+                <!-- INSTAGRAM?? -->
 
                 <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
 

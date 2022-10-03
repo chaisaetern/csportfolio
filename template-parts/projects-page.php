@@ -62,7 +62,8 @@
         ),
     );
 
-    for($i = 0; $i < count($projects); $i++) {
+    // for($i = 0; $i < count($projects); $i++) {
+    for($i = 0; $i < 6; $i++) {
 
     ?>
 

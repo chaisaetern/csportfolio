@@ -3,7 +3,7 @@ function pagination() {
     var windowHeight = $(window).height();
     var $body = $('body');
     var padding = .75;
-    var pages = Object.keys($('.page')).filter((section) => Number(section) + 1).map(section => Number(section) + 1)
+    var pages = Object.keys($('.page')).filter((section) => Number(section) + 1).map(section => Number(section) + 1);
   
     pages.map((page) => {
         if (offset > (windowHeight * (page - 2 + padding))) {
