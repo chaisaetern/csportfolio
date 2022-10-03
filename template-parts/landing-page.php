@@ -7,7 +7,7 @@
  */
 ?>
 <!-- Landing Page -->
-<div class="landing-page section page" id="page1" data-id="landing">
+<div class="landing-page section page" id="home" data-id="landing">
 
     <!-- https://youtu.be/1tMAstgh4TU?list=PLZ2Ee0n3vmhNylAHcq065fSP6jWP3jRp- -->
     <video class="landing-bg" autoplay muted loop>

@@ -188,7 +188,6 @@ add_action('wp_enqueue_scripts', 'scroll_script');
  * Enqueue Mouse Move JS.
  */
 function mousemove_script() {
-	// wp_enqueue_script( 'flickity.pkgd.min.js', get_template_directory_uri() . '/js/flickity.pkgd.min.js.js', array( 'jquery' ), '1.0.0', true );
 	wp_enqueue_script( 'mouseMoveParallax', get_template_directory_uri() . '/js/mouseMoveParallax.js', array( 'jquery' ), '1.0.0', true );
 	wp_enqueue_script( 'customScript', get_template_directory_uri() . '/js/customScript.js', array( 'jquery' ), '1.0.0', true );
 }
