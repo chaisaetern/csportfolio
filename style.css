@@ -1086,25 +1086,28 @@ textarea {
 }
 .projects-page .projects .project {
   height: 50vh;
-  display: grid;
-  place-items: center;
-  transition: 0.25s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
   filter: brightness(0.5);
   text-decoration: none;
   text-shadow: 0 0 5px #000;
   overflow: hidden;
+  transition: 0.25s;
 }
 .projects-page .projects .project:hover {
   filter: brightness(0.95);
 }
 .projects-page .projects .project:hover > h4 {
-  visibility: hidden;
+  mix-blend-mode: overlay;
 }
 .projects-page .projects .project > h4 {
+  color: #0f0;
+  text-shadow: 0 0 1px #000;
   font-size: 3rem;
   letter-spacing: 2px;
-  mix-blend-mode: overlay;
 }
 .projects-page .projects .project > img {
   position: absolute;

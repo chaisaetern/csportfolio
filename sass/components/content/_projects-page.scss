@@ -41,26 +41,31 @@
         .project {
             height: 50vh;
             // width: 100%;
-            display: grid;
-            place-items: center;
-            transition: 0.25s;
+            // display: grid;
+            // place-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             position: relative;
             filter: brightness(0.5);
             text-decoration: none;
             text-shadow: 0 0 5px #000;
             overflow: hidden;
+            transition: 0.25s;
             
             &:hover {
                 filter: brightness(0.95);
                 & > h4 {
-                    visibility: hidden;
+                    mix-blend-mode: overlay;
                 }
             }
             
             & > h4 {
+                color: #0f0;
+                text-shadow: 0 0 1px #000;
                 font-size: 3rem;
                 letter-spacing: 2px;
-                mix-blend-mode: overlay;
             }
 
             & > img {
