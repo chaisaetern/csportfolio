@@ -2,7 +2,7 @@ function pagination() {
     var offset = $(document).scrollTop();
     var windowHeight = $(window).height();
     var $body = $('body');
-    var padding = .75;
+    var padding = 1;
     var pages = Object.keys($('.page')).filter((section) => Number(section) + 1).map(section => Number(section) + 1)
   
     pages.map((page) => {

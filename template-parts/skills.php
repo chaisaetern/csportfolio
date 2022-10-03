@@ -17,51 +17,35 @@
             $skills = array(
                 array(
                     'name' => 'HTML',
-                    'exp' => 'Experienced',
                     'icon' => '<i class="devicon-html5-plain"></i>',
-                    'status' => 'active'
                 ),
                 array(
                     'name' => 'CSS',
-                    'exp' => 'Experienced',
                     'icon' => '<i class="devicon-css3-plain"></i>',
-                    'status' => 'active'
                 ),
                 array(
                     'name' => 'JS/ES6',
-                    'exp' => 'Experienced',
                     'icon' => '<i class="devicon-javascript-plain"></i>',
-                    'status' => 'active'
                 ),
                 array(
                     'name' => 'React',
-                    'exp' => 'Experienced',
                     'icon' => '<i class="devicon-react-original"></i>',
-                    'status' => 'inactive'
                 ),
                 array(
                     'name' => 'PHP/WordPress',
-                    'exp' => 'Medium',
                     'icon' => '<i class="devicon-php-plain"></i>',
-                    'status' => 'active'
                 ),
                 array(
                     'name' => 'NodeJS',
-                    'exp' => 'Medium',
                     'icon' => '<i class="devicon-nodejs-plain"></i>',
-                    'status' => 'inactive'
                 ),
                 array(
                     'name' => 'mySQL',
-                    'exp' => 'Medium',
                     'icon' => '<i class="devicon-mysql-plain"></i>',
-                    'status' => 'inactive'
                 ),
                 array(
                     'name' => 'mongodb',
-                    'exp' => 'Medium',
                     'icon' => '<i class="devicon-mongodb-plain"></i>',
-                    'status' => 'inactive'
                 ),
             );
 
@@ -83,10 +67,6 @@
             <div class="skill-desc">
 
                 <h5>✪<?php echo $skills[$i]['name']; ?></h5>
-
-                <p><?php echo $skills[$i]['exp']; ?></p>
-
-                <p class="<?php echo $skills[$i]['status'] ?>"><?php echo $skills[$i]['status']; ?></p>
                 
             </div>
 

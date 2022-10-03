@@ -29,22 +29,29 @@
         margin: 20px 0;
         background: #fff;
         border-radius: 100%;
-        width: 8px;
-        height: 8px;
-        transition: all .2s ease;
-  
-        &:hover {
-            transform: scale(1.5);
-        }
-        
+        width: 10px;
+        height: 10px;
+        color: #fff;
+
         & > a {
-            position: absolute;
+            position: relative;
             text-decoration: none;  
             left: 0;
             top: 0;
             color: inherit;
             width: 100%;
             height: 100%;
+
+            & > h6 {
+                width: 100%;
+                position: absolute;
+                top: -1.7rem;
+                right: 6rem;
+                margin: 1rem 0;
+                transition: 0.25s;
+                font-size: 1.25rem;
+                text-align: left;
+            }    
         }
     }
 }
@@ -58,5 +65,8 @@
 }
 
 %active-dot {
-    transform: scale(2);
+    transform: scale(1.5);
+    transition: 0.25s;
+    color: #0f0;
+    text-shadow: 0 0 1px #0f0;
 }

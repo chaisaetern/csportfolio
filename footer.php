@@ -40,11 +40,10 @@
 
 				<div class="footer-socials">
 					<h3>Socials</h3>
-					<!-- Star Symbol (✯) === &#x272f; -->
-					<a href="#">Email</a>
-					<a href="#">LinkedIn</a>
-					<a href="#">Github</i></a>
-					<a href="#">Discord</i></a>
+					<a href="#"><i class="fa-solid fa-envelope"></i> Email</a>
+					<a href="#"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+					<a href="#"><i class="fa-brands fa-github"></i> Github</i></a>
+					<a href="#"><i class="fa-brands fa-discord"></i> Discord</i></a>
 				</div>
 				
 				<div class="footer-contact">

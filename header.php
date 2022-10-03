@@ -21,7 +21,7 @@
 	<!-- Custom Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Quicksand&family=Righteous&family=Rubik+Dirt&family=Titillium+Web&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Quantico&family=Quicksand&family=Righteous&family=Titillium+Web&display=swap" rel="stylesheet">
 
 	<!-- Coding Language Icons -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">

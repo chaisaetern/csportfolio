@@ -89,7 +89,6 @@
             flex-direction: row;
             justify-content: center;
             align-items: flex-start;
-            // gap: 5rem;
             
             .footer-languages-used,
             .footer-socials,
@@ -100,17 +99,34 @@
                 align-items: flex-start;
                 margin: 2rem;
                 
-                & > h3, 
+                & > h3,
                 & > p {
                     margin: 0;
                 }
 
+                & > h3 {
+                    font-size: 1.75rem;
+                }
+
                 & > a {
                     text-decoration: none;
+                    text-align: left;
+                    // padding: 2px;
+                    color: #fff;
+                    text-shadow: 0 0 1px #fff;
+                    transition: 0.25s;
+                    &:hover {
+                        color: #555;
+                        text-shadow: 0 0 1px #555;
+                    }
+                    
+                    & > i {
+                        text-align: left;
+                        padding: 2px;
+                    }
                 }
                 
                 & > p {
-                    // margin-top: 7px;
                     color: #fff;
                     text-shadow: 0 0 1px #fff;
                     & > span {
