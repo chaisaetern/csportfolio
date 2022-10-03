@@ -90,7 +90,6 @@
 
     .lp-right {
         overflow: hidden;
-        // 
         .lp-author {
             display: flex;
             flex-direction: column;
@@ -113,6 +112,7 @@
 
                 & > img {
                     border-radius: 50%;
+                    filter: brightness(0.85);
                 }
             }
 
@@ -159,7 +159,7 @@
         width: 0rem !important;
     }
     50% {
-        left: 67%;
+        left: 55%;
         width: 5rem !important;
     }
     100% {

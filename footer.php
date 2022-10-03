@@ -11,7 +11,7 @@
 
 ?>
 
-	<footer id="footer" class="page section site-footer">
+	<footer id="page4" class="page section site-footer">
 
 		<div class="footer-message">
 
