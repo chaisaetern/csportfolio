@@ -53,7 +53,7 @@
     .lp-left {
         // position: relative;
 
-        & > p {
+        & > h2 {
             color: white;
             font-size: 1.5rem;
             text-shadow: 0 0 1px white;
@@ -156,15 +156,12 @@
 @keyframes pace {
     0% {
         left: 0;
-        width: 0rem !important;
     }
     50% {
-        left: 55%;
-        width: 5rem !important;
+        left: 60%;
     }
     100% {
         left: 0;
-        width: 0rem !important;
     }
 }
 

@@ -891,13 +891,13 @@ textarea {
   align-items: center;
   z-index: 1;
 }
-.landing-page .lp-left > p {
+.landing-page .lp-left > h2 {
   color: white;
   font-size: 1.5rem;
   text-shadow: 0 0 1px white;
   position: relative;
 }
-.landing-page .lp-left > p > span {
+.landing-page .lp-left > h2 > span {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -976,15 +976,12 @@ textarea {
 @keyframes pace {
   0% {
     left: 0;
-    width: 0rem !important;
   }
   50% {
-    left: 55%;
-    width: 5rem !important;
+    left: 60%;
   }
   100% {
     left: 0;
-    width: 0rem !important;
   }
 }
 /* Media Query for Mobile Devices */

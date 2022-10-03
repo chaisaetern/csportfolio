@@ -20,7 +20,7 @@
     <!-- Left Landing Page -->
     <div class="lp-left parallax" data-offset="20">
 
-        <p><span></span><?php printf( esc_html__( '%s', 'csportfolio' ), 'Hello, my name is' ); ?></p>
+        <h2><span></span><?php printf( esc_html__( '%s', 'csportfolio' ), 'Hello, my name is' ); ?></h2>
 
         <h1>
 
