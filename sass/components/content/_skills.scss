@@ -1,4 +1,4 @@
-$cyan: #3CBDA9;
+$cyan: #fff;
 
 // Skills Header
 .skill-header {
@@ -10,11 +10,11 @@ $cyan: #3CBDA9;
     color: transparent;
     -webkit-text-stroke: 1px #3cbdaa36;
     position: absolute;
-
+    
     & > h1 {
         font-family: "Long Shot", sans-serif;
-        font-size: 5rem;
-        line-height: 5rem;
+        font-size: 8rem;
+        line-height: 8rem;
         text-align: left;
         margin: 0;
     }
@@ -70,6 +70,8 @@ $cyan: #3CBDA9;
                     display: grid;
                     place-items: center;
                     min-width: 5rem;
+                    color: #fff;
+                    text-shadow: 0 0 1px #fff;
                     &:nth-child(2n + 1) {
                         text-align: right;
                     }
@@ -106,10 +108,12 @@ $cyan: #3CBDA9;
 
                 .active {
                     color: #0f0;
+                    text-shadow: 0 0 1px #0f0;
                 }
 
                 .inactive {
                     color: #f00;
+                    text-shadow: 0 0 1px #f00;
                 }
             }
         }

@@ -53,8 +53,6 @@
                 <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href=""><i class="fa-brands fa-github-alt"></i></a>
                 <a href=""><i class="fa-solid fa-envelope"></i></a>
-                <a href=""><i class="fa-brands fa-discord"></i></a>
-                <a href=""><i class="fa-brands fa-steam-symbol"></i></a>
             </div>
 
         </div>

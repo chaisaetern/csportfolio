@@ -12,19 +12,44 @@
 ?>
 
 	<footer id="page4" class="page section site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'csportfolio' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'csportfolio' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'csportfolio' ), 'csportfolio', '<a href="https://chaisaetern.tech">Chai Saetern</a>' );
-				?>
-		</div><!-- .site-info -->
+
+		<div class="footer-message">
+
+			<div class="footer-bg">
+				<img src="<?php the_field('footer_top_background'); ?>" alt="">
+			</div>
+
+			<h1>K, bye!</h1>
+
+		</div>
+
+		<div class="footer-bottom">
+
+			<div class="footer-row">
+				
+				<div class="footer-languages-used">
+					<h3>Built With</h3>
+					<p><span>↳</span> HTML</p>
+					<p><span>↳</span> SCSS</p>
+					<p><span>↳</span> JS/jQuery</p>
+					<p><span>↳</span> PHP</p>
+					<p><span>↳</span> WordPress</p>
+				</div>
+
+				<div class="footer-socials">
+					<h3>Socials</h3>
+					<a href="#">LinkedIn</a>
+					<a href="#">Discord</i></a>
+					<a href="#">Email</a>
+				</div>
+
+			</div>
+
+			<div class="site-info">
+				<p>Copyright &copy;2022 Chai Saetern. All Rights Reserved.</p>
+			</div><!-- .site-info -->
+
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
