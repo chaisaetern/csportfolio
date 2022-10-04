@@ -399,6 +399,7 @@ textarea {
   color: #3CBDA9;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 1rem;
+  letter-spacing: 1px;
   line-height: 1.5;
 }
 
@@ -494,6 +495,7 @@ body {
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "Quantico", sans-serif;
   font-weight: bolder;
+  letter-spacing: 1px;
 }
 
 hr {
@@ -936,24 +938,25 @@ textarea {
 .landing-page .lp-right .lp-author .lp-author-img-container {
   width: 15rem;
   height: 15rem;
-  overflow: hidden;
-  border: 2px solid rgba(0, 255, 0, 0.7450980392);
-  box-shadow: 0 0 8px rgba(0, 255, 0, 0.7450980392);
   border-radius: 50%;
-  padding: 5px;
+  padding: 20px;
   margin-bottom: 1rem;
 }
 .landing-page .lp-right .lp-author .lp-author-img-container > img {
   border-radius: 50%;
-  filter: brightness(0.85);
+  will-change: filter;
 }
 .landing-page .lp-right .lp-author > h5 {
-  color: white;
+  color: #fff;
+  text-shadow: 0 0 1px #fff;
   letter-spacing: 2px;
   margin: 1px;
   font-size: 1.5rem;
 }
 .landing-page .lp-right .lp-author > p {
+  color: #fff;
+  text-shadow: 0 0 1px #fff;
+  letter-spacing: 1px;
   margin: 0;
 }
 .landing-page .lp-right .lp-author .lp-socials {
@@ -985,6 +988,47 @@ textarea {
     left: 0;
   }
 }
+/**
+*
+*   Glowing Animation
+*   Start 0% - 100%
+*
+*/
+.glow {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5647058824);
+  color: #64ffda;
+}
+
+.glow:before, .glow:after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(to right, rgba(0, 242, 96, 0.6), rgba(5, 117, 230, 0.6), rgba(0, 242, 96, 0.6));
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  border-radius: inherit;
+  animation: steam 20s infinite alternate;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.glow:after {
+  filter: blur(50px) brightness(0.5);
+}
+
 /* Media Query for Mobile Devices */
 @media (max-width: 1280px) {
   .landing-page {
@@ -1302,7 +1346,7 @@ textarea {
   align-items: center;
   z-index: 2;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(60, 189, 170, 0.2117647059);
+  -webkit-text-stroke: 1px rgba(0, 255, 0, 0.1882352941);
   position: absolute;
 }
 .skill-header > h1 {
@@ -1383,19 +1427,13 @@ textarea {
 .skills-container .skills .skill .skill-desc > h5 {
   letter-spacing: 1.5px;
   margin: 0;
+  color: #00ff00;
+  text-shadow: 0 0 1px #00ff00;
 }
 .skills-container .skills .skill .skill-desc > p {
   margin: 0;
   color: #fff;
   text-shadow: 0 0 1px #fff;
-}
-.skills-container .skills .skill .skill-desc .active {
-  color: #0f0;
-  text-shadow: 0 0 1px #0f0;
-}
-.skills-container .skills .skill .skill-desc .inactive {
-  color: #f00;
-  text-shadow: 0 0 1px #f00;
 }
 
 .hobbies {

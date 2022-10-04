@@ -8,7 +8,7 @@ $cyan: #fff;
     align-items: center;
     z-index: 2;
     color: transparent;
-    -webkit-text-stroke: 1px #3cbdaa36;
+    -webkit-text-stroke: 1px #00ff0030;
     position: absolute;
     
     & > h1 {
@@ -98,22 +98,14 @@ $cyan: #fff;
                 & > h5 {
                     letter-spacing: 1.5px;
                     margin: 0;
+                    color: #00ff00;
+                    text-shadow: 0 0 1px #00ff00;
                 }
 
                 & > p {
                     margin: 0;
                     color: #fff;
                     text-shadow: 0 0 1px #fff;
-                }
-
-                .active {
-                    color: #0f0;
-                    text-shadow: 0 0 1px #0f0;
-                }
-
-                .inactive {
-                    color: #f00;
-                    text-shadow: 0 0 1px #f00;
                 }
             }
         }

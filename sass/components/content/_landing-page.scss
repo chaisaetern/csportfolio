@@ -104,27 +104,32 @@
             .lp-author-img-container {
                 width: 15rem;
                 height: 15rem;
-                overflow: hidden;
-                border: 2px solid #00ff00be;
-                box-shadow: 0 0 8px #00ff00be;
+                // overflow: hidden;
+                // border: 2px solid #00ff00be;
+                // box-shadow: 0 0 3px #000 inset;
                 border-radius: 50%;
-                padding: 5px;
+                padding: 20px;
                 margin-bottom: 1rem;
 
                 & > img {
+                    // border: 2px solid #00ff0030;
                     border-radius: 50%;
-                    filter: brightness(0.85);
+                    will-change: filter;
                 }
             }
 
             & > h5 {
-                color: white;
+                color: #fff;
+                text-shadow: 0 0 1px #fff;
                 letter-spacing: 2px;
                 margin: 1px;
                 font-size: 1.5rem;
             }
 
             & > p {
+                color: #fff;
+                text-shadow: 0 0 1px #fff;
+                letter-spacing: 1px;
                 margin: 0;
             }
 
@@ -154,6 +159,8 @@
 }
 
 
+
+
 @keyframes pace {
     0% {
         left: 0;
@@ -167,6 +174,51 @@
 }
 
 
+
+
+/**
+*
+*   Glowing Animation
+*   Start 0% - 100%
+*
+*/
+.glow {
+    position: relative;
+    background-color : #00000090;
+    color : #64ffda;
+}
+  
+.glow:before, .glow:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(to right, #00F26099, #0575E699, #00F26099);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    border-radius: inherit;
+    animation: steam 20s infinite alternate;
+}
+  
+  
+@keyframes steam {
+    0% {
+        background-position: 0 0; 
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.glow:after {
+    filter: blur(50px) brightness(0.5);
+}
+  
 
 
 /* Media Query for Mobile Devices */

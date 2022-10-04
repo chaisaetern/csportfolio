@@ -12,8 +12,6 @@
     <!-- https://youtu.be/1tMAstgh4TU?list=PLZ2Ee0n3vmhNylAHcq065fSP6jWP3jRp- -->
     <video class="landing-bg" autoplay muted loop>
         <source src="https://chaisaetern.tech/wp-content/uploads/2022/10/videoplayback2.mp4" type="video/mp4">
-        <!-- <source src="http://csportfolio.local/wp-content/uploads/2022/10/csgo_awp_ace_comp_unranked.mp4" type="video/mp4"> -->
-        <!-- <source src="http://csportfolio.local/wp-content/uploads/2022/10/My-Movie.mp4" type="video/mp4"> -->
         Your browser does not support the video tag.
     </video>
 
@@ -21,7 +19,7 @@
     <div class="lp-left parallax" data-offset="20">
 
         <h2>
-            <span></span>
+            <!-- <span></span> -->
             <?php printf( esc_html__( '%s', 'csportfolio' ), 'Hello, my name is' ); ?>
         </h2>
 
@@ -44,7 +42,7 @@
         <!-- Author -->
         <div class="lp-author">
 
-            <div class="lp-author-img-container">
+            <div class="lp-author-img-container glow">
 
                 <img src="<?php the_field('author_image'); ?>" alt="Author">
 
