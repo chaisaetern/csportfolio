@@ -9,7 +9,7 @@
 <!-- Hobbies Template Part-->
 
 <!-- Hobbies -->
-<div class="hobbies reveal fade-right">
+<div class="hobbies">
 
     <div class="hobby-header">
         <h1><?php printf( esc_html__( '%s', 'csportfolio' ), 'HOBBIES' ); ?></h1>

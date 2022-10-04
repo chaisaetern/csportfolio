@@ -28,6 +28,14 @@
 		<div class="footer-bottom">
 
 			<div class="footer-row">
+				<div class="footer-socials">
+
+					<h3>Socials</h3>
+					
+					<a href="#"><i class="fa-solid fa-square-envelope"></i> <span>Email</span></a>
+					<a href="#"><i class="fa-brands fa-linkedin"></i> <span>LinkedIn</span></a>
+					<a href="#"><i class="fa-brands fa-square-github"></i> <span>Github</span></i></a>
+				</div>
 				
 				<div class="footer-languages-used">
 					<h3>Built With</h3>
@@ -38,13 +46,6 @@
 					<p><span>↳</span> WordPress</p>
 				</div>
 
-				<div class="footer-socials">
-					<h3>Socials</h3>
-					<a href="#"><i class="fa-solid fa-square-envelope"></i> <span>Email</span></a>
-					<a href="#"><i class="fa-brands fa-linkedin"></i> <span>LinkedIn</span></a>
-					<a href="#"><i class="fa-brands fa-square-github"></i> <span>Github</span></i></a>
-				</div>
-				
 				<div class="footer-contact">
 					<h3>Other</h3>
 					<a href="#"><i class="fa-solid fa-file"></i> <span>Resumé</span></a>

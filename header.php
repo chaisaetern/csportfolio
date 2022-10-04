@@ -29,6 +29,9 @@
 	<!-- Font Awesome Kit -->
 	<script src="https://kit.fontawesome.com/8ea15955cd.js" crossorigin="anonymous"></script>
 
+	<script src="https://cdn.jsdelivr.net/npm/three/build/three.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.min.js"></script>
+
 	<?php wp_head(); ?>
 </head>
 

@@ -18,6 +18,6 @@
         Your browser does not support the video tag.
     </video>
 
-    <?php get_template_part('template-parts/skills'); ?>
+    <?php get_template_part('template-parts/skills2'); ?>
 
 </div>

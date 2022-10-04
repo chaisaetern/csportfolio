@@ -71,7 +71,7 @@
 
             <h4><?php echo $projects[$i]['name']; ?></h4>
 
-            <img src="<?php echo $projects[$i]['src']; ?>" alt="Project">
+            <figure><img src="<?php echo $projects[$i]['src']; ?>" alt="Project"></figure>
             
         </div>
 

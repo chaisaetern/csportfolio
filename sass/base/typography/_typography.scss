@@ -15,8 +15,14 @@ textarea {
 @import "copy";
 
 
-@font-face {
-	font-family: 'Long Shot';
-	src: url(http://csportfolio.local/wp-content/themes/csportfolio/fonts/Long_Shot.ttf);
-	font-weight: normal;
-}
+
+// Main header font
+@import url('http://fonts.cdnfonts.com/css/long-shot');
+// @import url('http://fonts.cdnfonts.com/css/moto-verse');
+
+
+// Sub Header font
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+// Paragraph font
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
