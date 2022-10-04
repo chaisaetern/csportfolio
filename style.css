@@ -798,7 +798,7 @@ textarea {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 99999;
+  z-index: 9999;
 }
 .site-header .site-title > a {
   text-decoration: none;
@@ -1284,8 +1284,9 @@ textarea {
 .site-footer .footer-bottom .footer-row {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: flex-start;
+  width: 100%;
 }
 .site-footer .footer-bottom .footer-row .footer-languages-used,
 .site-footer .footer-bottom .footer-row .footer-socials,
@@ -1294,7 +1295,6 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin: 2rem;
 }
 .site-footer .footer-bottom .footer-row .footer-languages-used > h3, .site-footer .footer-bottom .footer-row .footer-languages-used > p,
 .site-footer .footer-bottom .footer-row .footer-socials > h3,
@@ -1364,11 +1364,101 @@ textarea {
   bottom: 5px;
 }
 
-.skills {
-  width: 100%;
+.skill-header {
   height: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(0, 255, 0, 0.1882352941);
+  position: absolute;
+}
+.skill-header > h1 {
+  font-family: "Long Shot", sans-serif;
+  font-size: 8rem;
+  line-height: 8rem;
+  text-align: left;
+  margin: 0;
+}
+
+.skills-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.skills-container > h1 {
+  font-size: 5rem;
+}
+.skills-container .skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  position: relative;
+}
+.skills-container .skills .skill {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
   z-index: 1;
+}
+.skills-container .skills .skill:nth-child(2n+1) {
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-right: 10rem;
+}
+.skills-container .skills .skill .skill-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+.skills-container .skills .skill .skill-icon > h1 {
+  font-size: 2rem;
+  display: grid;
+  place-items: center;
+  min-width: 5rem;
+  color: #fff;
+  text-shadow: 0 0 1px #fff;
+}
+.skills-container .skills .skill .skill-icon > h1:nth-child(2n+1) {
+  text-align: right;
+}
+.skills-container .skills .skill .skill-icon > svg {
+  position: absolute;
+  height: 70px;
+  width: 86.4px;
+}
+.skills-container .skills .skill .skill-icon > svg > path {
+  stroke: none;
+  fill: #fff;
+}
+.skills-container .skills .skill .skill-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.skills-container .skills .skill .skill-desc > h5 {
+  letter-spacing: 1.5px;
+  margin: 0;
+  color: #00ff00;
+  text-shadow: 0 0 1px #00ff00;
+}
+.skills-container .skills .skill .skill-desc > p {
+  margin: 0;
+  color: #fff;
+  text-shadow: 0 0 1px #fff;
 }
 
 .hobbies {
