@@ -28,6 +28,7 @@
 		<div class="footer-bottom">
 
 			<div class="footer-row">
+				
 				<div class="footer-socials">
 
 					<h3>Socials</h3>
