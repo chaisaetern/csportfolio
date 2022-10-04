@@ -999,8 +999,7 @@ textarea {
   background-color: rgba(0, 0, 0, 0.5647058824);
   color: #64ffda;
 }
-
-.glow:before, .glow:after {
+.glow::before, .glow::after {
   content: "";
   position: absolute;
   left: -2px;
@@ -1012,6 +1011,9 @@ textarea {
   z-index: -1;
   border-radius: inherit;
   animation: steam 20s infinite alternate;
+}
+.glow::after {
+  filter: blur(50px) brightness(0.5);
 }
 
 @keyframes steam {
@@ -1025,10 +1027,6 @@ textarea {
     background-position: 0 0;
   }
 }
-.glow:after {
-  filter: blur(50px) brightness(0.5);
-}
-
 /* Media Query for Mobile Devices */
 @media (max-width: 1280px) {
   .landing-page {
