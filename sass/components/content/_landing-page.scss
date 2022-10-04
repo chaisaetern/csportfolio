@@ -187,20 +187,20 @@
     position: relative;
     background-color : #00000090;
     color : #64ffda;
-    
+
         &::before, &::after {
-        content: '';
-        position: absolute;
-        left: -2px;
-        top: -2px;
-        background: linear-gradient(to right, #00F26099, #0575E699, #00F26099);
-        background-size: 400%;
-        width: calc(100% + 4px);
-        height: calc(100% + 4px);
-        z-index: -1;
-        border-radius: inherit;
-        animation: steam 20s infinite alternate;
-    }
+            content: '';
+            position: absolute;
+            left: -2px;
+            top: -2px;
+            background: linear-gradient(to right, #00F26099, #0575E699, #00F26099);
+            background-size: 400%;
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            z-index: -1;
+            border-radius: inherit;
+            animation: steam 20s infinite alternate;
+        }
     
     &::after {
         filter: blur(50px) brightness(0.5);
