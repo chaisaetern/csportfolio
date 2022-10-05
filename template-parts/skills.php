@@ -64,7 +64,7 @@
 
             </div>
 
-            <div class="skill-desc">
+            <div class="skill-desc glow">
 
                 <h5>✪<?php echo $skills[$i]['name']; ?></h5>
                 
