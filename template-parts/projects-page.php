@@ -69,9 +69,15 @@
 
         <div class="project">
 
-            <h4><?php echo $projects[$i]['name']; ?></h4>
-
             <figure><img src="<?php echo $projects[$i]['src']; ?>" alt="Project"></figure>
+
+            <a href="<?php $projects[$i]['src']; ?>"><i class="fa-regular fa-eye"></i></a>
+
+            <h6><?php echo $projects[$i]['name']; ?></h6>
+
+            <div class="project-desc">
+                <p>This is a one or two sentence project description.</p>
+            </div>
             
         </div>
 
