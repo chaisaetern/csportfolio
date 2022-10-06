@@ -21,8 +21,6 @@
 				<img class="parallax" data-offset="25" src="<?php echo esc_url( the_field('footer_top_background_overlay_2') ); ?>" alt="">
 			</div>
 
-			<!-- <h1 class="parallax" data-offset="25">K, bye!</h1> -->
-
 		</div>
 
 		<div class="footer-bottom">
@@ -49,11 +47,11 @@
 				
 				<div class="footer-languages-used">
 					<h3><?php printf( esc_html__( '%s', 'csportfolio' ), 'Built With' ); ?></h3>
-					<p><span><?php printf( esc_html_e( '&#8627;' ) ); ?></span> <?php printf( esc_html_e( 'HTML', 'csportfolio' ) ); ?></p>
-					<p><span><?php printf( esc_html_e( '&#8627;' ) ); ?></span> <?php printf( esc_html_e( 'SCSS', 'csportfolio' ) ); ?></p>
-					<p><span><?php printf( esc_html_e( '&#8627;' ) ); ?></span> <?php printf( esc_html_e( 'JQ/jQuery', 'csportfolio' ) ); ?></p>
-					<p><span><?php printf( esc_html_e( '&#8627;' ) ); ?></span> <?php printf( esc_html_e( 'PHP', 'csportfolio' ) ); ?></p>
-					<p><span><?php printf( esc_html_e( '&#8627;' ) ); ?></span> <?php printf( esc_html_e( 'WordPress', 'csportfolio' ) ); ?></p>
+					<p><span><?php printf( esc_html_e( '&#8627;', 'csportfolio' ) ); ?></span> <?php printf( esc_html_e( 'HTML', 'csportfolio' ) ); ?></p>
+					<p><span><?php printf( esc_html_e( '&#8627;', 'csportfolio' ) ); ?></span> <?php printf( esc_html_e( 'SCSS', 'csportfolio' ) ); ?></p>
+					<p><span><?php printf( esc_html_e( '&#8627;', 'csportfolio' ) ); ?></span> <?php printf( esc_html_e( 'JQ/jQuery', 'csportfolio' ) ); ?></p>
+					<p><span><?php printf( esc_html_e( '&#8627;', 'csportfolio' ) ); ?></span> <?php printf( esc_html_e( 'PHP', 'csportfolio' ) ); ?></p>
+					<p><span><?php printf( esc_html_e( '&#8627;', 'csportfolio' ) ); ?></span> <?php printf( esc_html_e( 'WordPress', 'csportfolio' ) ); ?></p>
 				</div>
 
 				<div class="footer-contact">
