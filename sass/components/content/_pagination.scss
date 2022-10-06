@@ -55,6 +55,11 @@
                     color: #555;
                     text-shadow: 0 0 1px #555;
                 }
+
+                &:active {
+                    color: #0f0;
+                    text-shadow: 0 0 1px #0f0;
+                }
             }    
         }
 

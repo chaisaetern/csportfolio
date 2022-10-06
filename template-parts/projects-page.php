@@ -62,21 +62,23 @@
         ),
     );
 
-    // for($i = 0; $i < count($projects); $i++) {
-    for($i = 0; $i < 6; $i++) {
+    for($i = 0; $i < count($projects); $i++) {
+    // for($i = 0; $i < 6; $i++) {
 
     ?>
 
         <div class="project">
 
-            <figure><img src="<?php echo $projects[$i]['src']; ?>" alt="Project"></figure>
+            <figure><img src="<?php echo esc_url( $projects[$i]['src'] ); ?>" alt="Project"></figure>
 
-            <a href="<?php $projects[$i]['src']; ?>"><i class="fa-regular fa-eye"></i></a>
+            <a href="<?php esc_url( $projects[$i]['src'] ); ?>" target="_blank">
+                <i class="fa-regular fa-eye"></i>
+            </a>
 
-            <h6><?php echo $projects[$i]['name']; ?></h6>
+            <h6><?php printf( esc_html_e( $projects[$i]['name'], 'csportfolio' ) ); ?></h6>
 
             <div class="project-desc">
-                <p>This is a one or two sentence project description.</p>
+                <p><?php printf( esc_html_e( 'This is a one or two sentence about the project.', 'csportfolio' ) ); ?></p>
             </div>
             
         </div>

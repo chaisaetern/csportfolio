@@ -11,7 +11,7 @@
 
     <!-- https://youtu.be/1tMAstgh4TU?list=PLZ2Ee0n3vmhNylAHcq065fSP6jWP3jRp- -->
     <video class="landing-bg" autoplay muted loop>
-        <source src="https://chaisaetern.tech/wp-content/uploads/2022/10/videoplayback2.mp4" type="video/mp4">
+        <source src="<?php echo esc_url( 'https://chaisaetern.tech/wp-content/uploads/2022/10/videoplayback2.mp4' ); ?>" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
@@ -20,16 +20,16 @@
 
         <h2>
             <!-- <span></span> -->
-            <?php printf( esc_html__( '%s', 'csportfolio' ), 'Hello, my name is' ); ?>
+            <?php printf( esc_html_e( 'Hello, my name is', 'csportfolio' ) ); ?>
         </h2>
 
         <h1>
 
-            <?php printf( esc_html__( '%s', 'csportfolio' ), 'CHAI' ); ?>
+            <?php printf( esc_html_e( 'CHAI', 'csportfolio' ) ); ?>
         
             <br>
         
-            <?php printf( esc_html__( '%s', 'csportfolio' ), 'SAETERN' ); ?>
+            <?php printf( esc_html_e( 'SAETERN', 'csportfolio' ) ); ?>
 
         </h1>
 
@@ -44,28 +44,25 @@
 
             <div class="lp-author-img-container glow">
 
-                <img src="<?php the_field('author_image'); ?>" alt="Author">
+                <img src="<?php echo esc_url( the_field('author_image') ); ?>" alt="Author">
 
             </div>
 
-            <p><?php printf( esc_html__( '%s', 'csportfolio' ), 'WordPress' ); ?></p>
+            <p><?php printf( esc_html_e( 'WordPress', 'csportfolio' ) ); ?></p>
 
-            <p><?php printf( esc_html__( '%s', 'csportfolio' ), 'Front-End Developer' ); ?></p>
+            <p><?php printf( esc_html_e( 'Front-End Developer', 'csportfolio' ) ); ?></p>
 
             <div class="lp-socials">
-                
-                <!-- INSTAGRAM?? -->
 
-                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="<?php echo esc_url( 'https://www.linkedin.com/in/csaetern530' ); ?>" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
 
-                <a href=""><i class="fa-brands fa-github-alt"></i></a>
+                <a href="<?php echo esc_url( 'https://github.com/chaisaetern' ); ?>" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
 
-                <a href=""><i class="fa-solid fa-envelope"></i></a>
+                <a href="<?php echo esc_url( '#' ); ?>" target="_blank"><i class="fa-solid fa-envelope"></i></a>
 
             </div>
 
         </div>
-
 
     </div>
     

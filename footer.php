@@ -16,9 +16,9 @@
 		<div class="footer-message">
 
 			<div class="footer-bg">
-				<img src="<?php the_field('footer_top_background'); ?>" alt="">
-				<img class="parallax" data-offset="50" src="<?php the_field('footer_top_background_overlay'); ?>" alt="">
-				<img class="parallax" data-offset="25" src="<?php the_field('footer_top_background_overlay_2'); ?>" alt="">
+				<img src="<?php echo esc_url( the_field('footer_top_background') ); ?>" alt="">
+				<img class="parallax" data-offset="50" src="<?php echo esc_url( the_field('footer_top_background_overlay') ); ?>" alt="">
+				<img class="parallax" data-offset="25" src="<?php echo esc_url( the_field('footer_top_background_overlay_2') ); ?>" alt="">
 			</div>
 
 			<!-- <h1 class="parallax" data-offset="25">K, bye!</h1> -->
@@ -31,32 +31,47 @@
 				
 				<div class="footer-socials">
 
-					<h3>Socials</h3>
+					<h3><?php printf( esc_html_e( 'Socials', 'csportfolio' ) ); ?></h3>
 					
-					<a href="#"><i class="fa-solid fa-square-envelope"></i> <span>Email</span></a>
-					<a href="#"><i class="fa-brands fa-linkedin"></i> <span>LinkedIn</span></a>
-					<a href="#"><i class="fa-brands fa-square-github"></i> <span>Github</span></i></a>
+					<a href="<?php echo '#'; ?>">
+						<i class="fa-solid fa-square-envelope"></i>
+						<span><?php printf( esc_html_e( 'Email', 'csportfolio' ) ); ?></span>
+					</a>
+					<a href="<?php echo esc_url( 'https://www.linkedin.com/in/csaetern530' ); ?>" target="_blank">
+						<i class="fa-brands fa-linkedin"></i>
+						<span><?php printf( esc_html_e( 'LinkedIn', 'csportfolio' ) ); ?></span>
+					</a>
+					<a href="<?php echo esc_url( 'https://github.com/chaisaetern' ); ?>" target="_blank">
+						<i class="fa-brands fa-square-github"></i>
+						<span><?php printf( esc_html__( '%s', 'csportfolio' ), 'GitHub' ); ?></span>
+					</a>
 				</div>
 				
 				<div class="footer-languages-used">
-					<h3>Built With</h3>
-					<p><span>↳</span> HTML</p>
-					<p><span>↳</span> SCSS</p>
-					<p><span>↳</span> JS/jQuery</p>
-					<p><span>↳</span> PHP</p>
-					<p><span>↳</span> WordPress</p>
+					<h3><?php printf( esc_html__( '%s', 'csportfolio' ), 'Built With' ); ?></h3>
+					<p><span><?php printf( esc_html_e( '&#8627;' ) ); ?></span> <?php printf( esc_html_e( 'HTML', 'csportfolio' ) ); ?></p>
+					<p><span><?php printf( esc_html_e( '&#8627;' ) ); ?></span> <?php printf( esc_html_e( 'SCSS', 'csportfolio' ) ); ?></p>
+					<p><span><?php printf( esc_html_e( '&#8627;' ) ); ?></span> <?php printf( esc_html_e( 'JQ/jQuery', 'csportfolio' ) ); ?></p>
+					<p><span><?php printf( esc_html_e( '&#8627;' ) ); ?></span> <?php printf( esc_html_e( 'PHP', 'csportfolio' ) ); ?></p>
+					<p><span><?php printf( esc_html_e( '&#8627;' ) ); ?></span> <?php printf( esc_html_e( 'WordPress', 'csportfolio' ) ); ?></p>
 				</div>
 
 				<div class="footer-contact">
-					<h3>Other</h3>
-					<a href="#"><i class="fa-solid fa-file"></i> <span>Resumé</span></a>
-					<a href="#"><i class="fa-solid fa-bars-progress"></i> <span>Projects</span></a>
+					<h3><?php printf( esc_html_e( 'Other', 'csportfolio' ) ); ?></h3>
+					<a href="<?php echo esc_url( '#' ); ?>" target="_blank">
+						<i class="fa-solid fa-file"></i>
+						<span><?php printf( esc_html_e( 'Resumé', 'csportfolio' ) ); ?></span>
+					</a>
+					<a href="<?php echo esc_url( '#' ); ?>" target="_blank">
+						<i class="fa-solid fa-bars-progress"></i>
+						<span><?php printf( esc_html_e( 'Projects', 'csportfolio' ) ); ?></span>
+					</a>
 				</div>
 
 			</div>
 
 			<div class="site-info">
-				<p>Copyright &copy;2022 Chai Saetern. All Rights Reserved.</p>
+				<p><?php printf( esc_html_e( 'Copyright &copy;2022 Chai Saetern. All Rights Reserved.', 'csportfolio' ) ); ?></p>
 			</div><!-- .site-info -->
 
 		</div>
